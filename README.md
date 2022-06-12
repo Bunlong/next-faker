@@ -85,8 +85,8 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.buildingNumber() // => "5786"
-address.buildingNumber() // '379'
+address.buildingNumber(); // => "5786"
+address.buildingNumber(); // '379'
 ```
 
 #### Cardinal Direction
@@ -123,10 +123,10 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.cardinalDirection() // => "South"
-address.cardinalDirection() // 'North'
-address.cardinalDirection(false) // 'South'
-address.cardinalDirection(true) // 'N'
+address.cardinalDirection(); // => "South"
+address.cardinalDirection(); // 'North'
+address.cardinalDirection(false); // 'South'
+address.cardinalDirection(true); // 'N'
 ```
 
 #### City
@@ -163,8 +163,8 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.city() // => "Larrymouth"
-address.city() // 'East Jarretmouth'
+address.city(); // => "Larrymouth"
+address.city(); // 'East Jarretmouth'
 ```
 
 #### City Name
@@ -182,8 +182,8 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.cityName() // => "Menifee"
-address.cityName() // 'San Rafael'
+address.cityName(); // => "Menifee"
+address.cityName(); // 'San Rafael'
 ```
 
 #### Country
@@ -201,8 +201,8 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.country() // => "Malta"
-address.country() // 'Greece'
+address.country(); // => "Malta"
+address.country(); // 'Greece'
 ```
 
 #### Country Code
@@ -239,10 +239,28 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.city() // => "Larrymouth"
-address.city() // 'East Jarretmouth'
+address.city(); // => "Larrymouth"
+address.city(); // 'East Jarretmouth'
 ```
 
+#### County
+
+Returns a random localized county.
+
+Returns: string
+
+```ts
+// module
+address.county(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.county(); // => "Borders"
+address.county(); // 'Cambridgeshire'
+```
 
 ## 📜 Changelog
 
