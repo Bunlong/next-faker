@@ -553,6 +553,25 @@ address.stateAbbr(); // => "NV"
 address.stateAbbr(); // 'ND'
 ```
 
+#### Street
+
+Generates a random localized street name.
+
+Returns: string
+
+```ts
+// module
+address.street(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.street(); // => "Medhurst Road"
+address.street(); // 'Schroeder Isle'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
