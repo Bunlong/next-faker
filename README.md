@@ -116,7 +116,7 @@ Returns: string
 
 ```ts
 // module
-faker.address.cardinalDirection(useAbbr: boolean = false): string
+address.cardinalDirection(useAbbr: boolean = false): string
 
 // usage
 import { useFaker } from 'next-faker';
@@ -156,16 +156,35 @@ Returns: string
 
 ```ts
 // module
-faker.address.cardinalDirection(useAbbr: boolean = false): string
+address.city(format?: number | string): string
 
 // usage
 import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.city(format?: number | string): string
 address.city() // => "Larrymouth"
 address.city() // 'East Jarretmouth'
+```
+
+#### City Name
+
+Returns a random localized and existing city name.
+
+Returns: string
+
+```ts
+// module
+address.cardinalDirection(useAbbr: boolean = false): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.cityName(): string
+address.cityName() // => "Menifee"
+address.cityName() // 'San Rafael'
 ```
 
 ## 📜 Changelog
