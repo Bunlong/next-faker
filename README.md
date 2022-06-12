@@ -766,6 +766,44 @@ address.zipCodeByState("AK"); // '99595'
 address.zipCodeByState("??"); // '47683-9880'
 ```
 
+### 🐻 Animal
+
+Module to generate animal related entries.
+
+* Bear
+* Bird
+* Cat
+* Cetacean
+* Cow
+* Crocodilia
+* Dog
+* Fish
+* Horse
+* Insect
+* Lion
+* Rabbit
+* Snake
+* Type
+
+#### Bear
+
+Returns a random bear species.
+
+Returns: string
+
+```ts
+// module
+animal.bear(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.bear() // => "American black bear"
+animal.bear() // 'Asian black bear'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
