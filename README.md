@@ -175,16 +175,34 @@ Returns: string
 
 ```ts
 // module
-address.cardinalDirection(useAbbr: boolean = false): string
+address.cityName(): string
 
 // usage
 import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.cityName(): string
 address.cityName() // => "Menifee"
 address.cityName() // 'San Rafael'
+```
+
+#### Country
+
+Returns a random country name.
+
+Returns: string
+
+```ts
+// module
+address.country(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.country() // => "Malta"
+address.country() // 'Greece'
 ```
 
 ## 📜 Changelog
