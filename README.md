@@ -823,6 +823,44 @@ animal.bird(); // => "Acorn Woodpecker"
 animal.bird(); // 'Buller's Shearwater'
 ```
 
+#### Cat
+
+Returns a random cat breed.
+
+Returns: string
+
+```ts
+// module
+animal.cat(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.cat(); // => "Norwegian Forest Cat"
+animal.cat(); // 'Singapura'
+```
+
+#### Cetacean
+
+Returns a random cetacean species.
+
+Returns: string
+
+```ts
+// module
+animal.cetacean(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.cetacean(); // => "Fraser’s Dolphin"
+animal.cetacean(); // 'Spinner Dolphin'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
