@@ -800,8 +800,27 @@ import { useFaker } from 'next-faker';
 
 const { animal } = useFaker();
 
-animal.bear() // => "American black bear"
-animal.bear() // 'Asian black bear'
+animal.bear(); // => "American black bear"
+animal.bear(); // 'Asian black bear'
+```
+
+#### Bird
+
+Returns a random bird species.
+
+Returns: string
+
+```ts
+// module
+animal.bird(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.bird(); // => "Acorn Woodpecker"
+animal.bird(); // 'Buller's Shearwater'
 ```
 
 ## 📜 Changelog
