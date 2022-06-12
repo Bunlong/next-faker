@@ -688,6 +688,46 @@ address.timeZone(); // => "Asia/Riyadh"
 address.timeZone(); // 'Pacific/Guam'
 ```
 
+#### Zip Code
+
+Generates random zip code from specified format. If format is not specified, the locale's zip format is used.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>format?	</td>
+      <td>string</td>
+      <td></td>
+      <td>The optional format used to generate the the zip code. By default, a random format is used from the locale zip formats.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.zipCode(format?: string): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.zipCode(); // => "57868-5846"
+address.zipCode(); // '17839'
+address.zipCode('####'); // '6925'
+```
+
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
