@@ -1,0 +1,1 @@
+export { useFaker } from './useFaker';

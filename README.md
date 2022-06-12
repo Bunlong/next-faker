@@ -16,11 +16,66 @@ next-faker is available on yarn as well. It can be installed with the following 
 yarn add next-faker --dev
 ```
 
+## 🎁 Features
+
+* 💌 Addresses - Generate valid looking Addresses, Zip Codes, Street Names, States, and Countries.
+
+## 💡 Usage
+
+```js
+import { useFaker } from 'next-faker';
+
+const Home = () => {
+  const { address } = useFaker();
+
+  return (
+    <>
+      {address.buildingNumber()}
+    </>
+  );
+}
+
+export default Home;
+```
+
+## 💎 API
+
+### 💌 Address
+
+Module to generate addresses and locations.
+
+* Building Number
+* Cardinal Direction
+* City
+* City Name
+* City Prefix
+* City Suffix
+* Country
+* Country Code
+* County
+* Direction
+* Latitude
+* Longitude
+* Nearby GPSCoordinate
+* Ordinal Direction
+* Secondary Address
+* State
+* State Abbr
+* Street
+* Street Address
+* Street Name
+* Street Prefix
+* Street Suffix
+* Time Zone
+* Zip Code
+* Zip Code By State
+
 ## 📜 Changelog
 
-Latest version 0.0.0 (2022-06-12):
+Latest version 0.0.2 (2022-06-12):
 
-  * Add ...
+  * API
+    * Address: module to generate addresses and locations.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 
