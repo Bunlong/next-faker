@@ -22,7 +22,7 @@ yarn add next-faker --dev
 
 ## 💡 Usage
 
-```js
+```ts
 import { useFaker } from 'next-faker';
 
 const Home = () => {
@@ -69,6 +69,25 @@ Module to generate addresses and locations.
 * Time Zone
 * Zip Code
 * Zip Code By State
+
+#### Building Number
+
+Generates a random building number.
+
+Returns: string
+
+```ts
+// module
+address.buildingNumber(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.buildingNumber() // => "5786"
+address.buildingNumber() // '379'
+```
 
 ## 📜 Changelog
 
