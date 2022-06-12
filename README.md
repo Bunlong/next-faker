@@ -456,6 +456,45 @@ address.nearbyGPSCoordinate([33, -170]) // [ '33.0165', '-170.0636' ]
 address.nearbyGPSCoordinate([33, -170], 1000, true) // [ '37.9163', '-179.2408' ]
 ```
 
+#### Ordinal Direction
+
+Returns a random ordinal direction (northwest, southeast, etc).
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>useAbbr</td>
+      <td>boolean</td>
+      <td><code>false</code></td>
+      <td>If true this will return abbreviated directions (NW, SE, etc). Otherwise this will return the long name.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.ordinalDirection(useAbbr: boolean = false): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.ordinalDirection(); // => "Southeast"
+address.ordinalDirection(); // 'Northeast'
+address.ordinalDirection(false); // 'Northwest'
+address.ordinalDirection(true); // 'NE'
+```
 
 ## 📜 Changelog
 
