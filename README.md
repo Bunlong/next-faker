@@ -302,6 +302,108 @@ address.direction(false); // 'South'
 address.direction(true); // 'NE'
 ```
 
+#### Latitude
+
+Generates a random latitude.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>max</td>
+      <td>number</td>
+      <td><code>90</code></td>
+      <td>The upper bound for the latitude to generate.</td>
+    </tr>
+    <tr>
+      <td>min</td>
+      <td>number</td>
+      <td><code>-90</code></td>
+      <td>The lower bound for the latitude to generate.</td>
+    </tr>
+    <tr>
+      <td>precision</td>
+      <td>number</td>
+      <td><code>4</code></td>
+      <td>The number of decimal points of precision for the latitude.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.latitude(max: number = 90, min: number = -90, precision: number = 4): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.latitude(); // => "8.7864"
+address.latitude(); // '-30.9501'
+address.latitude(10, -10, 5); // '2.68452'
+```
+
+#### Longitude
+
+Generates a random longitude.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>max</td>
+      <td>number</td>
+      <td><code>180</code></td>
+      <td>The upper bound for the longitude to generate.</td>
+    </tr>
+    <tr>
+      <td>min</td>
+      <td>number</td>
+      <td><code>-180</code></td>
+      <td>The lower bound for the longitude to generate.</td>
+    </tr>
+    <tr>
+      <td>precision</td>
+      <td>number</td>
+      <td><code>4</code></td>
+      <td>The number of decimal points of precision for the longitude.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+faker.address.longitude(max: number = 180, min: number = -180, precision: number = 4): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.longitude(); // => "17.5729"
+address.longitude(); // '-154.0226'
+address.longitude(10, -10, 5); // '-4.03620'
+```
+
 
 ## 📜 Changelog
 
