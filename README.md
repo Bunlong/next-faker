@@ -703,7 +703,7 @@ Generates random zip code from specified format. If format is not specified, the
   </tr>
   <tbody>
     <tr>
-      <td>format?	</td>
+      <td>format?</td>
       <td>string</td>
       <td></td>
       <td>The optional format used to generate the the zip code. By default, a random format is used from the locale zip formats.</td>
@@ -727,6 +727,44 @@ address.zipCode(); // '17839'
 address.zipCode('####'); // '6925'
 ```
 
+#### Zip Code By State
+
+Generates random zip code from state abbreviation. If state abbreviation is not specified, a random zip code is generated according to the locale's zip format. Only works for locales with postcode_by_state definition. If a locale does not have a postcode_by_state definition, a random zip code is generated according to the locale's zip format.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>state</td>
+      <td>string</td>
+      <td></td>
+      <td>The abbreviation of the state to generate the zip code for.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.zipCodeByState(state: string): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.zipCodeByState(); // => "57868-5846"
+address.zipCodeByState("AK"); // '99595'
+address.zipCodeByState("??"); // '47683-9880'
+```
 
 ## 📜 Changelog
 
