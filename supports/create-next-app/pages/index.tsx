@@ -2,9 +2,9 @@ import type { NextPage } from 'next'
 import { useFaker } from 'next-faker'
 
 const Home: NextPage = () => {
-  const { address } = useFaker();
+  const { animal } = useFaker();
 
-  console.log(address.buildingNumber());
+  console.log(animal.bear());
 
   return (
     <>
