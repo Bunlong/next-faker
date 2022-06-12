@@ -404,6 +404,58 @@ address.longitude(); // '-154.0226'
 address.longitude(10, -10, 5); // '-4.03620'
 ```
 
+#### Nearby GPSCoordinate
+
+Generates a random GPS coordinate within the specified radius from the given coordinate.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>coordinate?</td>
+      <td>[latitude: number, longitude: number]</td>
+      <td></td>
+      <td>The original coordinate to get a new coordinate close to. If no coordinate is given, a random one will be chosen.</td>
+    </tr>
+    <tr>
+      <td>radius</td>
+      <td>number</td>
+      <td><code>10</code></td>
+      <td>The maximum distance from the given coordinate to the new coordinate.</td>
+    </tr>
+    <tr>
+      <td>isMetric</td>
+      <td>boolean</td>
+      <td><code>false</code></td>
+      <td>If <code>true</code> assume the radius to be in kilometers. If <code>false</code> for miles.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.nearbyGPSCoordinate(coordinate?: [latitude: number, longitude: number], radius: number = 10, isMetric: boolean = false): [latitude: string, longitude: string]
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.nearbyGPSCoordinate() // => ["8.7864","33.4241"]
+address.nearbyGPSCoordinate() // [ '33.8475', '-170.5953' ]
+address.nearbyGPSCoordinate([33, -170]) // [ '33.0165', '-170.0636' ]
+address.nearbyGPSCoordinate([33, -170], 1000, true) // [ '37.9163', '-179.2408' ]
+```
+
 
 ## 📜 Changelog
 
