@@ -262,6 +262,47 @@ address.county(); // => "Borders"
 address.county(); // 'Cambridgeshire'
 ```
 
+#### Direction
+
+Returns a random direction (cardinal and ordinal; northwest, east, etc).
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>useAbbr</td>
+      <td>boolean</td>
+      <td><code>false</code></td>
+      <td>If true this will return abbreviated directions (NW, E, etc). Otherwise this will return the long name.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.direction(useAbbr: boolean = false): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.direction(); // => "Northeast"
+address.direction(); // 'Northeast'
+address.direction(false); // 'South'
+address.direction(true); // 'NE'
+```
+
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
