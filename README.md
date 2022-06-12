@@ -650,6 +650,43 @@ address.streetPrefix(); // => "b"
 address.streetPrefix(); // 'Boame'
 ```
 
+#### Street Suffix
+
+Returns a random localized street suffix.
+
+Returns: string
+
+```ts
+// module
+address.streetSuffix(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.streetSuffix(); // => "Orchard"
+address.streetSuffix(); // 'Streets'
+```
+
+#### Time Zone
+
+Returns a random time zone.
+
+Returns: string
+
+```ts
+// module
+address.timeZone(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.timeZone(); // => "Asia/Riyadh"
+address.timeZone(); // 'Pacific/Guam'
+```
 
 ## 📜 Changelog
 
