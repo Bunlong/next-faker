@@ -129,6 +129,45 @@ address.cardinalDirection(false) // 'South'
 address.cardinalDirection(true) // 'N'
 ```
 
+#### City
+
+Generates a random localized city name.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>format?</td>
+      <td>number | string</td>
+      <td></td>
+      <td>The index of the format to use. Deprecated do not use.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+faker.address.cardinalDirection(useAbbr: boolean = false): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.city(format?: number | string): string
+address.city() // => "Larrymouth"
+address.city() // 'East Jarretmouth'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
