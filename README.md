@@ -534,6 +534,25 @@ address.state(); // => "Nevada"
 address.state(); // 'Georgia'
 ```
 
+#### State Abbr
+
+Returns a random localized state's abbreviated name from this country.
+
+Returns: string
+
+```ts
+// module
+address.stateAbbr(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.stateAbbr(); // => "NV"
+address.stateAbbr(); // 'ND'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
