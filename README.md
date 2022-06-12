@@ -450,10 +450,10 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.nearbyGPSCoordinate() // => ["8.7864","33.4241"]
-address.nearbyGPSCoordinate() // [ '33.8475', '-170.5953' ]
-address.nearbyGPSCoordinate([33, -170]) // [ '33.0165', '-170.0636' ]
-address.nearbyGPSCoordinate([33, -170], 1000, true) // [ '37.9163', '-179.2408' ]
+address.nearbyGPSCoordinate(); // => ["8.7864","33.4241"]
+address.nearbyGPSCoordinate(); // [ '33.8475', '-170.5953' ]
+address.nearbyGPSCoordinate([33, -170]); // [ '33.0165', '-170.0636' ]
+address.nearbyGPSCoordinate([33, -170], 1000, true); // [ '37.9163', '-179.2408' ]
 ```
 
 #### Ordinal Direction
@@ -610,6 +610,44 @@ address.streetAddress(); // => "5786 Little Summit"
 address.streetAddress(); // '0917 O'Conner Estates'
 address.streetAddress(false); // '34830 Erdman Hollow'
 address.streetAddress(true); // '3393 Ronny Way Apt. 742'
+```
+
+#### Street Name
+
+Returns a random localized street name.
+
+Returns: string
+
+```ts
+// module
+address.streetName(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.streetName(); // => "Medhurst Road"
+address.streetName(); // 'Cavill Avenue'
+```
+
+#### Street Prefix
+
+Returns a random localized street prefix.
+
+Returns: string
+
+```ts
+// module
+address.streetPrefix(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.streetPrefix(); // => "b"
+address.streetPrefix(); // 'Boame'
 ```
 
 
