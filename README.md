@@ -861,6 +861,25 @@ animal.cetacean(); // => "Fraser’s Dolphin"
 animal.cetacean(); // 'Spinner Dolphin'
 ```
 
+#### Cow
+
+Returns a random cow species.
+
+Returns: string
+
+```ts
+// module
+animal.cow(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.cow(); // => "Kostroma cattle"
+animal.cow(); // 'Brava'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
