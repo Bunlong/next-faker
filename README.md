@@ -572,6 +572,47 @@ address.street(); // => "Medhurst Road"
 address.street(); // 'Schroeder Isle'
 ```
 
+#### Street Address
+
+Generates a random localized street address.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>useFullAddress</td>
+      <td>boolean</td>
+      <td><code>false</code></td>
+      <td>When true this will generate a full address. Otherwise it will just generate a street address.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.streetAddress(useFullAddress: boolean = false): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.streetAddress(); // => "5786 Little Summit"
+address.streetAddress(); // '0917 O'Conner Estates'
+address.streetAddress(false); // '34830 Erdman Hollow'
+address.streetAddress(true); // '3393 Ronny Way Apt. 742'
+```
+
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
