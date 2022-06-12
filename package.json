@@ -25,7 +25,7 @@
   "scripts": {
     "@test": "jest --runInBand",
     "build": "rollup -c",
-    "prettier": "prettier --write './src/*.ts' './src/*.tsx' './demo/*js' --config ./.prettierrc",
+    "prettier": "prettier --write './src/*.ts' './src/*.tsx' --config ./.prettierrc",
     "lint:check": "eslint ./src --ext .tsx,.ts --report-unused-disable-directives",
     "bundlesize": "npm run build && bundlesize",
     "dev": "rollup -c -w",
@@ -69,11 +69,11 @@
   "bundlesize": [
     {
       "path": "./dist/*.js",
-      "maxSize": "21 kB"
+      "maxSize": "900 kB"
     },
     {
       "path": "./dist/**/*.js",
-      "maxSize": "21 kB"
+      "maxSize": "900 kB"
     },
     {
       "path": "./dist/*.ts",
