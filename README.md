@@ -511,8 +511,27 @@ import { useFaker } from 'next-faker';
 
 const { address } = useFaker();
 
-address.secondaryAddress() // => "Suite 578"
-address.secondaryAddress() // 'Apt. 861'
+address.secondaryAddress(); // => "Suite 578"
+address.secondaryAddress(); // 'Apt. 861'
+```
+
+#### State
+
+Returns a random localized state from this country.
+
+Returns: string
+
+```ts
+// module
+address.state(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.state(); // => "Nevada"
+address.state(); // 'Georgia'
 ```
 
 ## 📜 Changelog
