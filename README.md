@@ -496,6 +496,25 @@ address.ordinalDirection(false); // 'Northwest'
 address.ordinalDirection(true); // 'NE'
 ```
 
+#### Secondary Address
+
+Generates a random localized secondary address. This refers to a specific location at a given address such as an apartment or room number.
+
+Returns: string
+
+```ts
+// module
+address.secondaryAddress(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.secondaryAddress() // => "Suite 578"
+address.secondaryAddress() // 'Apt. 861'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
