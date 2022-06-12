@@ -205,6 +205,45 @@ address.country() // => "Malta"
 address.country() // 'Greece'
 ```
 
+#### Country Code
+
+Returns a random country code.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>alphaCode</td>
+      <td>'alpha-2' | 'alpha-3'</td>
+      <td><code>'alpha-2'</code></td>
+      <td>The code to return. Can be either <code>'alpha-2'</code> (2 letter code) or <code>'alpha-3'</code> (three letter code).</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: string
+
+```ts
+// module
+address.city(format?: number | string): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { address } = useFaker();
+
+address.city() // => "Larrymouth"
+address.city() // 'East Jarretmouth'
+```
+
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
