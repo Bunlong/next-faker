@@ -918,6 +918,25 @@ animal.dog(); // => "Kuvasz"
 animal.dog(); // 'Irish Water Spaniel'
 ```
 
+#### Fish
+
+Returns a random fish species.
+
+Returns: string
+
+```ts
+// module
+animal.fish(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.fish() // => "Hilsa shad"
+animal.fish() // 'Mandarin fish'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.2 (2022-06-12):
