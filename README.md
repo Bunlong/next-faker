@@ -956,12 +956,31 @@ animal.horse(); // => "M'Par"
 animal.horse(); // 'Swedish Warmblood'
 ```
 
+#### Insect
+
+Returns a random insect species.
+
+Returns: string
+
+```ts
+// module
+animal.insect(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.insect(); // => "Mossyrose gall wasp"
+animal.insect(); // 'Pyramid ant'
+```
+
 ## 📜 Changelog
 
-Latest version 0.0.2 (2022-06-12):
+Latest version 0.0.3 (2022-06-14):
 
   * API
-    * Address: module to generate addresses and locations.
+    * Animal: module to generate animal related entries.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 
