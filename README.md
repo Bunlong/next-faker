@@ -1032,6 +1032,25 @@ animal.snake(); // => "Selayer reticulated python"
 animal.snake(); // 'Eyelash viper'
 ```
 
+#### Type
+
+Returns a random animal type.
+
+Returns: string
+
+```ts
+// module
+animal.type(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.type(); // => "crocodilia"
+animal.type(); // 'crocodilia'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.3 (2022-06-14):
