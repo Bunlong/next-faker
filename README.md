@@ -975,6 +975,25 @@ animal.insect(); // => "Mossyrose gall wasp"
 animal.insect(); // 'Pyramid ant'
 ```
 
+#### Lion
+
+Returns a random lion species.
+
+Returns: string
+
+```ts
+// module
+animal.lion(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.lion(); // => "Northeast Congo Lion"
+animal.lion(); // 'Northeast Congo Lion'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.3 (2022-06-14):
