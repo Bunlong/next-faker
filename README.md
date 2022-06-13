@@ -994,6 +994,25 @@ animal.lion(); // => "Northeast Congo Lion"
 animal.lion(); // 'Northeast Congo Lion'
 ```
 
+#### Rabbit
+
+Returns a random rabbit species.
+
+Returns: string
+
+```ts
+// module
+animal.rabbit(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.rabbit(); // => "Havana"
+animal.rabbit(); // 'Florida White'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.3 (2022-06-14):
