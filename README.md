@@ -1,6 +1,6 @@
 # next-faker
 
-React hook for generating fake data for testing and development in your next React apps.
+React hook for generating fake data for testing and development.
 
 ## 🔧 Install
 
@@ -77,7 +77,7 @@ Generates a random building number.
 Returns: string
 
 ```ts
-// module
+// function
 address.buildingNumber(): string
 
 // usage
@@ -115,7 +115,7 @@ Returns a random cardinal direction (north, east, south, west).
 Returns: string
 
 ```ts
-// module
+// function
 address.cardinalDirection(useAbbr: boolean = false): string
 
 // usage
@@ -155,7 +155,7 @@ Generates a random localized city name.
 Returns: string
 
 ```ts
-// module
+// function
 address.city(format?: number | string): string
 
 // usage
@@ -174,7 +174,7 @@ Returns a random localized and existing city name.
 Returns: string
 
 ```ts
-// module
+// function
 address.cityName(): string
 
 // usage
@@ -193,7 +193,7 @@ Returns a random country name.
 Returns: string
 
 ```ts
-// module
+// function
 address.country(): string
 
 // usage
@@ -231,7 +231,7 @@ Returns a random country code.
 Returns: string
 
 ```ts
-// module
+// function
 address.city(format?: number | string): string
 
 // usage
@@ -250,7 +250,7 @@ Returns a random localized county.
 Returns: string
 
 ```ts
-// module
+// function
 address.county(): string
 
 // usage
@@ -288,7 +288,7 @@ Returns a random direction (cardinal and ordinal; northwest, east, etc).
 Returns: string
 
 ```ts
-// module
+// function
 address.direction(useAbbr: boolean = false): string
 
 // usage
@@ -340,7 +340,7 @@ Generates a random latitude.
 Returns: string
 
 ```ts
-// module
+// function
 address.latitude(max: number = 90, min: number = -90, precision: number = 4): string
 
 // usage
@@ -391,7 +391,7 @@ Generates a random longitude.
 Returns: string
 
 ```ts
-// module
+// function
 faker.address.longitude(max: number = 180, min: number = -180, precision: number = 4): string
 
 // usage
@@ -442,7 +442,7 @@ Generates a random GPS coordinate within the specified radius from the given coo
 Returns: string
 
 ```ts
-// module
+// function
 address.nearbyGPSCoordinate(coordinate?: [latitude: number, longitude: number], radius: number = 10, isMetric: boolean = false): [latitude: string, longitude: string]
 
 // usage
@@ -482,7 +482,7 @@ Returns a random ordinal direction (northwest, southeast, etc).
 Returns: string
 
 ```ts
-// module
+// function
 address.ordinalDirection(useAbbr: boolean = false): string
 
 // usage
@@ -503,7 +503,7 @@ Generates a random localized secondary address. This refers to a specific locati
 Returns: string
 
 ```ts
-// module
+// function
 address.secondaryAddress(): string
 
 // usage
@@ -522,7 +522,7 @@ Returns a random localized state from this country.
 Returns: string
 
 ```ts
-// module
+// function
 address.state(): string
 
 // usage
@@ -541,7 +541,7 @@ Returns a random localized state's abbreviated name from this country.
 Returns: string
 
 ```ts
-// module
+// function
 address.stateAbbr(): string
 
 // usage
@@ -560,7 +560,7 @@ Generates a random localized street name.
 Returns: string
 
 ```ts
-// module
+// function
 address.street(): string
 
 // usage
@@ -598,7 +598,7 @@ Generates a random localized street address.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetAddress(useFullAddress: boolean = false): string
 
 // usage
@@ -619,7 +619,7 @@ Returns a random localized street name.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetName(): string
 
 // usage
@@ -638,7 +638,7 @@ Returns a random localized street prefix.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetPrefix(): string
 
 // usage
@@ -657,7 +657,7 @@ Returns a random localized street suffix.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetSuffix(): string
 
 // usage
@@ -676,7 +676,7 @@ Returns a random time zone.
 Returns: string
 
 ```ts
-// module
+// function
 address.timeZone(): string
 
 // usage
@@ -714,7 +714,7 @@ Generates random zip code from specified format. If format is not specified, the
 Returns: string
 
 ```ts
-// module
+// function
 address.zipCode(format?: string): string
 
 // usage
@@ -753,7 +753,7 @@ Generates random zip code from state abbreviation. If state abbreviation is not 
 Returns: string
 
 ```ts
-// module
+// function
 address.zipCodeByState(state: string): string
 
 // usage
@@ -766,12 +766,297 @@ address.zipCodeByState("AK"); // '99595'
 address.zipCodeByState("??"); // '47683-9880'
 ```
 
+### 🐻 Animal
+
+Module to generate animal related entries.
+
+* Bear
+* Bird
+* Cat
+* Cetacean
+* Cow
+* Crocodilia
+* Dog
+* Fish
+* Horse
+* Insect
+* Lion
+* Rabbit
+* Snake
+* Type
+
+#### Bear
+
+Returns a random bear species.
+
+Returns: string
+
+```ts
+// function
+animal.bear(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.bear(); // => "American black bear"
+animal.bear(); // 'Asian black bear'
+```
+
+#### Bird
+
+Returns a random bird species.
+
+Returns: string
+
+```ts
+// function
+animal.bird(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.bird(); // => "Acorn Woodpecker"
+animal.bird(); // 'Buller's Shearwater'
+```
+
+#### Cat
+
+Returns a random cat breed.
+
+Returns: string
+
+```ts
+// function
+animal.cat(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.cat(); // => "Norwegian Forest Cat"
+animal.cat(); // 'Singapura'
+```
+
+#### Cetacean
+
+Returns a random cetacean species.
+
+Returns: string
+
+```ts
+// function
+animal.cetacean(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.cetacean(); // => "Fraser’s Dolphin"
+animal.cetacean(); // 'Spinner Dolphin'
+```
+
+#### Cow
+
+Returns a random cow species.
+
+Returns: string
+
+```ts
+// function
+animal.cow(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.cow(); // => "Kostroma cattle"
+animal.cow(); // 'Brava'
+```
+
+#### Crocodilia
+
+Returns a random crocodilian species.
+
+Returns: string
+
+```ts
+// function
+animal.crocodilia(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.crocodilia(); // => "Morelet’s Crocodile"
+animal.crocodilia(); // 'Philippine Crocodile'
+```
+
+#### Dog
+
+Returns a random dog breed.
+
+Returns: string
+
+```ts
+// function
+animal.dog(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.dog(); // => "Kuvasz"
+animal.dog(); // 'Irish Water Spaniel'
+```
+
+#### Fish
+
+Returns a random fish species.
+
+Returns: string
+
+```ts
+// function
+animal.fish(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.fish(); // => "Hilsa shad"
+animal.fish(); // 'Mandarin fish'
+```
+
+#### Horse
+
+Returns a random horse breed.
+
+Returns: string
+
+```ts
+// function
+animal.horse(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.horse(); // => "M'Par"
+animal.horse(); // 'Swedish Warmblood'
+```
+
+#### Insect
+
+Returns a random insect species.
+
+Returns: string
+
+```ts
+// function
+animal.insect(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.insect(); // => "Mossyrose gall wasp"
+animal.insect(); // 'Pyramid ant'
+```
+
+#### Lion
+
+Returns a random lion species.
+
+Returns: string
+
+```ts
+// function
+animal.lion(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.lion(); // => "Northeast Congo Lion"
+animal.lion(); // 'Northeast Congo Lion'
+```
+
+#### Rabbit
+
+Returns a random rabbit species.
+
+Returns: string
+
+```ts
+// function
+animal.rabbit(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.rabbit(); // => "Havana"
+animal.rabbit(); // 'Florida White'
+```
+
+#### Snake
+
+Returns a random snake species.
+
+Returns: string
+
+```ts
+// function
+animal.snake(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.snake(); // => "Selayer reticulated python"
+animal.snake(); // 'Eyelash viper'
+```
+
+#### Type
+
+Returns a random animal type.
+
+Returns: string
+
+```ts
+// function
+animal.type(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.type(); // => "crocodilia"
+animal.type(); // 'crocodilia'
+```
+
 ## 📜 Changelog
 
-Latest version 0.0.2 (2022-06-12):
+Latest version 0.0.3 (2022-06-14):
 
   * API
-    * Address: module to generate addresses and locations.
+    * Animal: module to generate animal related entries.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 
