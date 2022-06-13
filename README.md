@@ -1013,6 +1013,25 @@ animal.rabbit(); // => "Havana"
 animal.rabbit(); // 'Florida White'
 ```
 
+#### Snake
+
+Returns a random snake species.
+
+Returns: string
+
+```ts
+// module
+animal.snake(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.snake(); // => "Selayer reticulated python"
+animal.snake(); // 'Eyelash viper'
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.3 (2022-06-14):
