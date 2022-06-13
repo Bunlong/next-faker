@@ -933,8 +933,27 @@ import { useFaker } from 'next-faker';
 
 const { animal } = useFaker();
 
-animal.fish() // => "Hilsa shad"
-animal.fish() // 'Mandarin fish'
+animal.fish(); // => "Hilsa shad"
+animal.fish(); // 'Mandarin fish'
+```
+
+#### Horse
+
+Returns a random horse breed.
+
+Returns: string
+
+```ts
+// module
+animal.horse(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.horse(); // => "M'Par"
+animal.horse(); // 'Swedish Warmblood'
 ```
 
 ## 📜 Changelog
