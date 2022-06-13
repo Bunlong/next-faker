@@ -1,6 +1,6 @@
 # next-faker
 
-React hook for generating fake data for testing and development in your next React apps.
+React hook for generating fake data for testing and development.
 
 ## 🔧 Install
 
@@ -878,6 +878,25 @@ const { animal } = useFaker();
 
 animal.cow(); // => "Kostroma cattle"
 animal.cow(); // 'Brava'
+```
+
+#### Crocodilia
+
+Returns a random crocodilian species.
+
+Returns: string
+
+```ts
+// module
+animal.crocodilia(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.crocodilia() // => "Morelet’s Crocodile"
+animal.crocodilia() // 'Philippine Crocodile'
 ```
 
 ## 📜 Changelog
