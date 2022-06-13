@@ -77,7 +77,7 @@ Generates a random building number.
 Returns: string
 
 ```ts
-// module
+// function
 address.buildingNumber(): string
 
 // usage
@@ -115,7 +115,7 @@ Returns a random cardinal direction (north, east, south, west).
 Returns: string
 
 ```ts
-// module
+// function
 address.cardinalDirection(useAbbr: boolean = false): string
 
 // usage
@@ -155,7 +155,7 @@ Generates a random localized city name.
 Returns: string
 
 ```ts
-// module
+// function
 address.city(format?: number | string): string
 
 // usage
@@ -174,7 +174,7 @@ Returns a random localized and existing city name.
 Returns: string
 
 ```ts
-// module
+// function
 address.cityName(): string
 
 // usage
@@ -193,7 +193,7 @@ Returns a random country name.
 Returns: string
 
 ```ts
-// module
+// function
 address.country(): string
 
 // usage
@@ -231,7 +231,7 @@ Returns a random country code.
 Returns: string
 
 ```ts
-// module
+// function
 address.city(format?: number | string): string
 
 // usage
@@ -250,7 +250,7 @@ Returns a random localized county.
 Returns: string
 
 ```ts
-// module
+// function
 address.county(): string
 
 // usage
@@ -288,7 +288,7 @@ Returns a random direction (cardinal and ordinal; northwest, east, etc).
 Returns: string
 
 ```ts
-// module
+// function
 address.direction(useAbbr: boolean = false): string
 
 // usage
@@ -340,7 +340,7 @@ Generates a random latitude.
 Returns: string
 
 ```ts
-// module
+// function
 address.latitude(max: number = 90, min: number = -90, precision: number = 4): string
 
 // usage
@@ -391,7 +391,7 @@ Generates a random longitude.
 Returns: string
 
 ```ts
-// module
+// function
 faker.address.longitude(max: number = 180, min: number = -180, precision: number = 4): string
 
 // usage
@@ -442,7 +442,7 @@ Generates a random GPS coordinate within the specified radius from the given coo
 Returns: string
 
 ```ts
-// module
+// function
 address.nearbyGPSCoordinate(coordinate?: [latitude: number, longitude: number], radius: number = 10, isMetric: boolean = false): [latitude: string, longitude: string]
 
 // usage
@@ -482,7 +482,7 @@ Returns a random ordinal direction (northwest, southeast, etc).
 Returns: string
 
 ```ts
-// module
+// function
 address.ordinalDirection(useAbbr: boolean = false): string
 
 // usage
@@ -503,7 +503,7 @@ Generates a random localized secondary address. This refers to a specific locati
 Returns: string
 
 ```ts
-// module
+// function
 address.secondaryAddress(): string
 
 // usage
@@ -522,7 +522,7 @@ Returns a random localized state from this country.
 Returns: string
 
 ```ts
-// module
+// function
 address.state(): string
 
 // usage
@@ -541,7 +541,7 @@ Returns a random localized state's abbreviated name from this country.
 Returns: string
 
 ```ts
-// module
+// function
 address.stateAbbr(): string
 
 // usage
@@ -560,7 +560,7 @@ Generates a random localized street name.
 Returns: string
 
 ```ts
-// module
+// function
 address.street(): string
 
 // usage
@@ -598,7 +598,7 @@ Generates a random localized street address.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetAddress(useFullAddress: boolean = false): string
 
 // usage
@@ -619,7 +619,7 @@ Returns a random localized street name.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetName(): string
 
 // usage
@@ -638,7 +638,7 @@ Returns a random localized street prefix.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetPrefix(): string
 
 // usage
@@ -657,7 +657,7 @@ Returns a random localized street suffix.
 Returns: string
 
 ```ts
-// module
+// function
 address.streetSuffix(): string
 
 // usage
@@ -676,7 +676,7 @@ Returns a random time zone.
 Returns: string
 
 ```ts
-// module
+// function
 address.timeZone(): string
 
 // usage
@@ -714,7 +714,7 @@ Generates random zip code from specified format. If format is not specified, the
 Returns: string
 
 ```ts
-// module
+// function
 address.zipCode(format?: string): string
 
 // usage
@@ -753,7 +753,7 @@ Generates random zip code from state abbreviation. If state abbreviation is not 
 Returns: string
 
 ```ts
-// module
+// function
 address.zipCodeByState(state: string): string
 
 // usage
@@ -792,7 +792,7 @@ Returns a random bear species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.bear(): string
 
 // usage
@@ -811,7 +811,7 @@ Returns a random bird species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.bird(): string
 
 // usage
@@ -830,7 +830,7 @@ Returns a random cat breed.
 Returns: string
 
 ```ts
-// module
+// function
 animal.cat(): string
 
 // usage
@@ -849,7 +849,7 @@ Returns a random cetacean species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.cetacean(): string
 
 // usage
@@ -868,7 +868,7 @@ Returns a random cow species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.cow(): string
 
 // usage
@@ -887,7 +887,7 @@ Returns a random crocodilian species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.crocodilia(): string
 
 // usage
@@ -906,7 +906,7 @@ Returns a random dog breed.
 Returns: string
 
 ```ts
-// module
+// function
 animal.dog(): string
 
 // usage
@@ -925,7 +925,7 @@ Returns a random fish species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.fish(): string
 
 // usage
@@ -944,7 +944,7 @@ Returns a random horse breed.
 Returns: string
 
 ```ts
-// module
+// function
 animal.horse(): string
 
 // usage
@@ -963,7 +963,7 @@ Returns a random insect species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.insect(): string
 
 // usage
@@ -982,7 +982,7 @@ Returns a random lion species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.lion(): string
 
 // usage
@@ -1001,7 +1001,7 @@ Returns a random rabbit species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.rabbit(): string
 
 // usage
@@ -1020,7 +1020,7 @@ Returns a random snake species.
 Returns: string
 
 ```ts
-// module
+// function
 animal.snake(): string
 
 // usage
@@ -1039,7 +1039,7 @@ Returns a random animal type.
 Returns: string
 
 ```ts
-// module
+// function
 animal.type(): string
 
 // usage
