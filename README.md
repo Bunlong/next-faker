@@ -895,8 +895,27 @@ import { useFaker } from 'next-faker';
 
 const { animal } = useFaker();
 
-animal.crocodilia() // => "Morelet’s Crocodile"
-animal.crocodilia() // 'Philippine Crocodile'
+animal.crocodilia(); // => "Morelet’s Crocodile"
+animal.crocodilia(); // 'Philippine Crocodile'
+```
+
+#### Dog
+
+Returns a random dog breed.
+
+Returns: string
+
+```ts
+// module
+animal.dog(): string
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { animal } = useFaker();
+
+animal.dog(); // => "Kuvasz"
+animal.dog(); // 'Irish Water Spaniel'
 ```
 
 ## 📜 Changelog
