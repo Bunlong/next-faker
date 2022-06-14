@@ -1051,6 +1051,20 @@ animal.type(); // => "crocodilia"
 animal.type(); // 'crocodilia'
 ```
 
+### 🎨 Color
+
+* Cmyk
+* Color By CSSColor Space
+* Css Supported Function
+* Css Supported Space
+* Hsl
+* Human
+* Hwb
+* Lab
+* Lch
+* Rgb
+* Space
+
 ## 📜 Changelog
 
 Latest version 0.0.3 (2022-06-14):
