@@ -4,5 +4,6 @@ export function useFaker() {
   return {
     address: faker?.address,
     animal: faker?.animal,
+    color: faker?.color,
   };
 }
