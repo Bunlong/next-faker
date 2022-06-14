@@ -1065,6 +1065,55 @@ animal.type(); // 'crocodilia'
 * Rgb
 * Space
 
+#### Cmyk
+
+Returns a CMYK color.
+
+##### Parameters
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>options?</td>
+      <td>{ ... }</td>
+      <td></td>
+      <td>Options object.</td>
+    </tr>
+    <tr>
+      <td>options.format?</td>
+      <td>ColorFormat</td>
+      <td><code>'decimal'</code></td>
+      <td>Format of generated CMYK color.</td>
+    </tr>
+  </tbody>
+</table>
+
+Returns: number[] | string
+
+```ts
+// function
+color.cmyk(options?: {
+  format: ColorFormat
+}): string | number[]
+
+// usage
+import { useFaker } from 'next-faker';
+
+const { color } = useFaker();
+
+color.cmyk(); // => [0.55,0.59,0.72,0.85]
+color.cmyk(); // [0.31, 0.52, 0.32, 0.43]
+color.cmyk({ format: 'decimal' }); // [0.31, 0.52, 0.32, 0.43]
+color.cmyk({ format: 'css' }); // cmyk(100%, 0%, 0%, 0%)
+color.cmyk({ format: 'binary' }); // (8-32 bits) x 4
+```
+
 ## 📜 Changelog
 
 Latest version 0.0.3 (2022-06-14):
