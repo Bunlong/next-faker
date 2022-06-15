@@ -12,7 +12,7 @@
     "url": "https://github.com/Bunlong/next-faker.git/issues"
   },
   "keywords": [],
-  "homepage": "https://github.com/Bunlong/next-faker",
+  "homepage": "https://next-faker.github.io",
   "main": "dist/next-faker.js",
   "module": "dist/next-faker.es.js",
   "jsnext:main": "dist/next-faker.es.js",
