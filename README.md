@@ -47,13 +47,14 @@ The API covers the following modules:
 | :------- | :------- | :------- |
 | Address | `address.city()` | Lake Raoulfort |
 | Animal | `animal.cat()` | Norwegian Forest Cat |
+| Color | `color.rgb()` | #cdfcdc |
 
 ## 📜 Changelog
 
-Latest version 0.0.3 (2022-06-14):
+Latest version 0.0.4 (2022-06-17):
 
   * API
-    * Animal: module to generate animal related entries.
+    * Color: module to generate colors.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 
