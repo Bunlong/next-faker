@@ -1,3 +1,13 @@
+## 0.0.4 (2022-06-17)
+
+### ✨ Features
+
+  * Color: module to generate colors.
+
+Credits
+
+* [@Bunlong](https://github.com/Bunlong)
+
 ## 0.0.3 (2022-06-14)
 
 ### ✨ Features

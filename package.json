@@ -1,6 +1,6 @@
 {
   "name": "next-faker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React hook for generating fake data for testing and development.",
   "author": "Bunlong <bunlong.van@gmail.com>",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "url": "https://github.com/Bunlong/next-faker.git/issues"
   },
   "keywords": [],
-  "homepage": "https://github.com/Bunlong/next-faker",
+  "homepage": "https://next-faker.github.io",
   "main": "dist/next-faker.js",
   "module": "dist/next-faker.es.js",
   "jsnext:main": "dist/next-faker.es.js",
