@@ -48,13 +48,14 @@ The API covers the following modules:
 | Address | `address.city()` | Lake Raoulfort |
 | Animal | `animal.cat()` | Norwegian Forest Cat |
 | Color | `color.rgb()` | #cdfcdc |
+| Commerce | `commerce.product()` | Polo t-shirt |
 
 ## 📜 Changelog
 
-Latest version 0.0.4 (2022-06-17):
+Latest version 0.0.5 (2022-06-19):
 
   * API
-    * Color: module to generate colors.
+    * Commerce: module to generate commerce and product related entries.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 

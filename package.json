@@ -1,6 +1,6 @@
 {
   "name": "next-faker",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React hook for generating fake data for testing and development.",
   "author": "Bunlong <bunlong.van@gmail.com>",
   "license": "MIT",
