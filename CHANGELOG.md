@@ -1,3 +1,13 @@
+## 0.0.5 (2022-06-19)
+
+### ✨ Features
+
+  * Commerce: module to generate commerce and product related entries.
+
+Credits
+
+* [@Bunlong](https://github.com/Bunlong)
+
 ## 0.0.4 (2022-06-17)
 
 ### ✨ Features
