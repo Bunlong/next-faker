@@ -49,13 +49,14 @@ The API covers the following modules:
 | Animal | `animal.cat()` | Norwegian Forest Cat |
 | Color | `color.rgb()` | #cdfcdc |
 | Commerce | `commerce.product()` | Polo t-shirt |
+| Company | `company.companyName()` | Zboncak and Sons |
 
 ## 📜 Changelog
 
-Latest version 0.0.5 (2022-06-19):
+Latest version 0.0.6 (2022-06-21):
 
   * API
-    * Commerce: module to generate commerce and product related entries.
+    * Company: module to generate company related entries.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 
