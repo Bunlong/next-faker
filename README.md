@@ -2,7 +2,7 @@
 
 React hook for generating fake data for testing and development.
 
-[![NPM](https://img.shields.io/npm/v/next-faker.svg)](https://www.npmjs.com/package/next-faker) ![npm bundle size](https://img.shields.io/bundlephobia/min/next-faker) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/next-faker.svg)](https://www.npmjs.com/package/next-faker) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## 🔧 Install
 
