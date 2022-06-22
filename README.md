@@ -52,13 +52,14 @@ The API covers the following modules:
 | Color | `color.rgb()` | #cdfcdc |
 | Commerce | `commerce.product()` | Polo t-shirt |
 | Company | `company.companyName()` | Zboncak and Sons |
+| Database | `database.engine()` | MyISAM |
 
 ## 📜 Changelog
 
-Latest version 0.0.6 (2022-06-21):
+Latest version 0.0.6 (2022-06-23):
 
   * API
-    * Company: module to generate company related entries.
+    * Database: module to generate database related entries.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 
