@@ -7,5 +7,6 @@ export function useFaker() {
     color: faker?.color,
     commerce: faker?.commerce,
     company: faker?.company,
+    database: faker?.database,
   };
 }

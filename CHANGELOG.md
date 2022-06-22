@@ -1,3 +1,13 @@
+## 0.0.7 (2022-06-23)
+
+### ✨ Features
+
+  * Database: module to generate database related entries.
+
+Credits
+
+* [@Bunlong](https://github.com/Bunlong)
+
 ## 0.0.6 (2022-06-21)
 
 ### ✨ Features
