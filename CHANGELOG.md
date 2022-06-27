@@ -1,3 +1,13 @@
+## 0.1.0 (2022-06-28)
+
+### ✨ Features
+
+  * Datatype: module to generate various primitive values and data types.
+
+Credits
+
+* [@Bunlong](https://github.com/Bunlong)
+
 ## 0.0.7 (2022-06-23)
 
 ### ✨ Features

@@ -53,13 +53,14 @@ The API covers the following modules:
 | Commerce | `commerce.product()` | Polo t-shirt |
 | Company | `company.companyName()` | Zboncak and Sons |
 | Database | `database.engine()` | MyISAM |
+| Datatype | `datatype.uuid()` | 7b16dd12-935e-4acc-8381-b1e457bf0176 |
 
 ## 📜 Changelog
 
-Latest version 0.0.6 (2022-06-23):
+Latest version 0.1.0 (2022-06-28):
 
   * API
-    * Database: module to generate database related entries.
+    * Datatype: module to generate various primitive values and data types.
 
 Details changes for each release are documented in the [CHANGELOG.md](https://github.com/Bunlong/react-papaparse/blob/master/CHANGELOG.md).
 

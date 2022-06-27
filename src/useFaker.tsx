@@ -8,5 +8,6 @@ export function useFaker() {
     commerce: faker?.commerce,
     company: faker?.company,
     database: faker?.database,
+    datatype: faker?.datatype,
   };
 }
